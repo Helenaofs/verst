@@ -1,0 +1,117 @@
+.cart
+    padding-top: 90px
+    padding-bottom: 80px
+    &__content
+        display: flex
+        align-items: baseline
+        justify-content: space-between
+    &__wrapper
+        width: 652px
+        height: 300px
+        display: flex
+        img
+            height: 100%
+    &__info
+        width: 390px
+        padding-top: 22px
+        padding-left: 33px
+        padding-right: 20px
+    &__item
+        margin-bottom: 40px
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    &__header
+        font-size: 24px
+        font-weight: 400
+        margin-bottom: 42px
+        display: flex
+        justify-content: space-between
+        svg
+            cursor: pointer
+        &_close:hover
+            path
+                fill: $colorSelectSite
+        h2
+            color: #222
+    &__description
+        font-size: 22px
+        font-weight: 300
+        line-height: 32px
+        color: #575757
+    .span-text
+        color: $colorSelectSite
+    .span-box
+        border: 1px solid #A4A4A4
+        padding: 2px 6px
+        margin-left: 10px
+    &__right
+        form
+            margin-top: 10px
+            font-weight: 300
+            display: flex
+            flex-direction: column
+            width: 360px
+            h2
+                margin-bottom: 20px
+        button
+            padding: 10px 15px
+    &__input
+        border: 1px solid #A4A4A4
+        height: 40px
+        margin-bottom: 20px
+        padding-left: 8px
+        font-weight: 300
+        transition: .5s
+    &__input:hover
+        box-shadow: 6px 4px 4px #888
+    &__btn
+        padding: 10px
+        border: 1px solid #A4A4A4
+        font-weight: 300
+        transition: .4s
+        &_pink
+            display: block
+            background-color: $colorSelectSite
+            border: none
+            height: 50px
+            color: #FFF
+            margin: 0 auto
+    &__btn:hover
+        box-shadow: 10px 5px 5px #888
+    &__btn-box
+        margin-top: 72px
+        display: flex
+        justify-content: space-between
+        font-weight: 300
+        button
+            padding-left: 39px
+            padding-right: 41px
+            height: 50px
+            a
+                color: #222
+    &__total
+        padding: 39px 34px
+        width: 360px
+        height: 214px
+        background-color: #F5F3F3
+        margin-top: 76px
+        hr
+            width: 273px
+            border: 1px solid #E2E2E2
+            text-align: center
+            margin: 0 auto
+            margin-top: 21px
+            margin-bottom: 17px
+
+    &__sub-total
+        font-size: 12px
+        font-weight: 300
+        text-align: right
+        margin-bottom: 14px
+        span
+            margin-left: 16px
+    &__grand-total
+        text-align: right
+        font-size: 16px
+        font-weight: 300
+        span
+            margin-left: 16px

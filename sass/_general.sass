@@ -1,0 +1,380 @@
+*
+    font-family: 'Lato', sans-serif
+
+summary
+    display: block
+
+summary::-webkit-details-marker
+    display: none
+
+body
+    font-family: 'Lato', sans-serif
+
+.center
+    padding-left: calc(50% - $widthSite / 2 )
+    padding-right: calc(50% - $widthSite / 2 )
+
+a
+    text-decoration: none
+
+.link-catalog
+    color: #FFF
+
+.header
+    background-color: $backBlock
+    padding-top: 20px
+    padding-bottom: 20px
+    display: flex
+    justify-content: space-between
+    position: relative
+    &__left
+        display: flex
+        align-items: center
+        gap: 41px
+    &__right
+        display: flex
+        align-items: center
+        img
+            margin-right: 14px
+        .header__burger-img
+            padding-top: 4px
+            margin-right: 17px
+
+#burger
+    position: absolute
+    left: -999999px
+    visibility: hidden
+
+#burger:checked ~ .nav
+    right: 0px
+
+.box-content
+    overflow: hidden
+
+.nav
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    width: 232px
+    padding: 32px
+    position: absolute
+    box-sizing: border-box
+    top: 78px
+    right: -232px
+    transition: right .3s
+    z-index: 11
+    &__title
+        margin-bottom: 14px
+    &__link
+        display: block
+        color: $colorSelectSite
+        padding-left: 16px
+        margin-bottom: 8px
+        border-bottom: 1px solid #EBEBEB
+        padding-bottom: 4px
+    &__list
+        padding-left: 35px
+        a
+            color: #6F6E6E
+    ul
+        list-style: none
+        margin-bottom: 10px
+        li
+            ul
+                li:hover
+                    border-bottom: 1px solid #ccc
+                    width: 75%
+                    a
+                        color: $colorSelectSite
+
+.promo
+    display: flex
+    align-items: center
+    background-color: #F1E4E6
+    &__img-man
+        width: 50%
+        margin-right: 30px
+    &__title
+        border-left: $var3 12px solid
+        padding: 16px 0 5px 15px
+
+.title
+    font-size: 48px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 42px
+
+.subtitle
+    font-size: 32px
+    text-transform: uppercase
+    margin-bottom: 15px
+
+.pink_text
+    color: $var3
+    &__direction
+        color: $var3
+        font-size: 22px
+
+.direction
+    min-height: 640px
+    &__wrapper
+        padding-top: 65px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__box-square
+        width: 31%
+        height: 260px
+        background-color: #ccc
+        text-align: center
+        transition: .4s
+        &_women
+            background: url(../img/women1_5.jpg) center (center/cover) no-repeat
+        &_women:hover
+            transform: scale(1.02)
+            box-shadow: 10px 5px 5px #888
+            cursor: pointer
+        &_men
+            background: url(../img/men1_5.jpg) center (center/cover) no-repeat
+        &_men:hover
+            transform: scale(1.02)
+            box-shadow: 10px 5px 5px #888
+            cursor: pointer
+        &_kids
+            background: url(../img/kids1_5.jpg) center (center/cover) no-repeat
+        &_kids:hover
+            transform: scale(1.02)
+            box-shadow: 10px 5px 5px #888
+            cursor: pointer
+
+        &__box-name
+            padding-top: 100px
+            height: 100%
+            color: #FFF
+            background: rgba(33, 22, 22, 0.7)
+            font-size: 16px
+            text-transform: uppercase
+            a
+                color: #FFF
+    &__box-rectangle
+        margin-top: 30px
+        height: 180px
+        background: url(../img/acsrs.png) center (center/cover) no-repeat
+        transition: .3s
+        &_box-name
+            padding: 68px
+            color: #FFF
+            background: rgba(33, 22, 22, 0.7)
+            font-size: 16px
+            text-transform: uppercase
+            text-align: center
+    &__box-rectangle:hover
+        transform: scale(1.01)
+        box-shadow: 10px 5px 5px #888
+        cursor: pointer
+
+.fetured
+    &__title
+        margin-bottom: 6px
+        font-size: 34px
+        font-weight: 400
+        text-align: center
+    &__subtitle
+        margin-bottom: 48px
+        font-size: 16px
+        color: rgba(159, 159, 159, 1)
+        text-align: center
+    &__img-pink
+        background: #F1E4E6
+    &__block-cards
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-bottom: 30px
+    &__item
+        width: 32%
+        text-align: center
+        margin-bottom: 16px
+        transition: .4s
+        img
+            height: 420px
+    &__item:hover
+        transform: scale(1.02)
+        box-shadow: 10px 5px 5px #888
+        cursor: pointer
+    &__descr
+        padding-top: 25px
+        padding-left: 16px
+        height: 162px
+        background: rgba(248, 248, 248, 1)
+    &__card-title
+        margin-bottom: 12px
+        text-transform: uppercase
+        font-size: 14px
+        text-align: left
+        color: #222
+    &__card-text
+        margin-bottom: 18px
+        text-align: left
+        font-size: 13px
+        font-weight: 300
+        color: rgba(93, 93, 93, 1)
+    &__price
+        color: $var3
+        text-align: left
+    &__btn
+        display: block
+        margin: 0 auto
+        margin-top: 48px
+        margin-bottom: 90px
+        width: 212px
+        height: 48px
+        color: $var3
+        border: 1px solid $var3
+        transition: .5s
+        a
+            color: $var3
+            transition: .5s
+    &__btn:hover
+        background-color: $var3
+        a
+            color: #fff
+
+.advantages
+    min-height: 341px
+    background: rgba(34, 34, 36, 1)
+    &__wrapper
+        height: 341px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__block
+        width: 360px
+        img
+            display: block
+            width: 45px
+            margin: 0 auto
+            margin-bottom: 19px
+
+    &__title
+        text-align: center
+        color: rgba(251, 251, 251, 1)
+        margin-bottom: 16px
+        font-size: 19px
+        font-weight: 400
+    &__text
+        text-align: center
+        font-size: 13px
+        font-weight: 300
+        color: rgba(251, 251, 251, 1)
+
+.subscribe
+    height: 448px
+    background: url(../img/bg_sub.jpg) center (center/cover) no-repeat
+    position: relative
+    &__opasity
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: #fff
+        opacity: 50%
+        z-index: 0
+    &__wrapper
+        width: 100%
+        padding-top: 131px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        gap: 80px
+        align-items: center
+    &__left-box
+        display: flex
+        margin: 0 auto
+        flex-direction: column
+        align-items: center
+        z-index: 1
+        &__text
+            text-align: center
+            font-weight: 400
+            span
+                font-style: italic
+    &__round
+        margin-bottom: 15px
+        img
+            width: 96px
+            height: 96px
+            border-radius: 100%
+
+    &__right-box
+        display: flex
+        flex-direction: column
+        margin: 0 auto
+        align-items: center
+        z-index: 1
+    &__title
+        text-align: center
+        text-transform: uppercase
+        font-size: 24px
+        font-weight: 500
+        margin-bottom: 5px
+    &__subtitle
+        font-size: 18px
+        font-weight: 300
+        margin-bottom: 32px
+
+    &__form-box
+        display: flex
+        border: 1px ridge $var3
+        border-radius: 30px
+        width: 340px
+    &__input
+        width: 200px
+        height: 49px
+        font-family: inherit
+        padding-left: 18px
+        background-color: #E1E1E1
+        border-top-left-radius: 30px
+        border-bottom-left-radius: 30px
+    &__btn
+        display: inline-block
+        background-color: $var3
+        width: 140px
+        border-top-right-radius: 30px
+        border-bottom-right-radius: 30px
+    &__btn:hover
+        background-color: #ccc
+    &__btn-text
+        text-align: center
+        padding-top: 14px
+        color: #fff
+    &__btn-text:hover
+        color: $var3
+.footer
+    padding-top: 24px
+    padding-bottom: 24px
+    background: rgba(34, 34, 36, 1)
+    color: #fff
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__copyright
+        font-size: 16px
+        font-weight: 400
+    &__socials
+        display: flex
+        justify-content: space-between
+        text-align: center
+        &__faicebook, &__inst, &__pintrest, &__twitter
+            width: 31px
+            height: 31px
+            background: #fff
+            margin-right: 8px
+            text-align: center
+            img
+                display: block
+                margin: 0 auto
+                padding-top: 9px
+        &__faicebook:hover, &__inst:hover, &__pintrest:hover, &__twitter:hover
+            background-color: $var3
+            a
+                color: #fff
